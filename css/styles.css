@@ -236,7 +236,8 @@ body {
     display: flex;
     align-items: center;
     gap: 3rem;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .feauters-card__box {
@@ -332,13 +333,117 @@ body {
     font-weight: 100;
     line-height: 2rem;
     letter-spacing: -0.03rem;
-    margin-bottom: 0.8rem;
+    transition: .3s color ease, .3s opacity ease;
+}
+
+.articles-list__title:hover {
+    color: var(--text-green);
+}
+
+.articles-list__title:active {
+    opacity: 0.6;
 }
 
 .articles-list__text {
+    margin-top: 0.8rem;
     color: var(--text-grey);
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.8rem;
+    letter-spacing: -0.02rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--text-black);
+    padding: 4.8rem 0;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 13.1rem;
+}
+
+.footer-logo__image {
+    display: block;
+    width: 14rem;
+    height: 2rem;
+}
+
+.footer-logo__list {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.footer-logo__item-link__icon {
+    display: block;
+    outline: none;
+    color: rgb(255, 255, 255);
+    transition: .3s color ease, .3s opaicty ease;
+}
+
+.footer-logo__item-link__icon:hover {
+    color: var(--text-green);
+}
+
+.footer-logo__item-link__icon:hover {
+    opacity: 0.6;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 3rem;
+    margin-right: auto;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.footer-nav__items {
+    width: 16rem;
+}
+
+.footer-nav__link:hover {
+    color: var(--text-green);
+}
+
+.footer-nav__link:active {
+    opacity: 0.6;
+}
+
+.footer-nav__link {
+    color: var(--text-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: -0.02rem;
+    transition: .3s color ease, .3s opaicty ease;
+
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-btn__link {
+    color: var(--text-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: 2.6rem;
     letter-spacing: -0.02rem;
 }
