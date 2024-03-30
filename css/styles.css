@@ -328,6 +328,7 @@ body {
 }
 
 .articles-list__title {
+    display: block;
     color: var(--text-black);
     font-size: 1.6rem;
     font-weight: 100;
