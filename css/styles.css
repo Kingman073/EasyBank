@@ -343,9 +343,10 @@ body {
 .articles-list__title:active {
     opacity: 0.6;
 }
-
+.articles-list__titletext {
+    margin-bottom: 0.8rem;
+}
 .articles-list__text {
-    margin-top: 0.8rem;
     color: var(--text-grey);
     font-size: 1.3rem;
     font-weight: 400;
